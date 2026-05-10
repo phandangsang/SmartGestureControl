@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette - Cyan -->
+    <color name="primary">#FF00E5FF</color>
+    <color name="primary_dark">#FF00B8D4</color>
+    <color name="primary_variant">#FF00ACC1</color>
+    <color name="on_primary">#FF000000</color>
+    <color name="primary_container">#FF004D56</color>
+    <color name="on_primary_container">#FF6FF7FF</color>
+
+    <!-- Secondary palette - Purple -->
+    <color name="secondary">#FFBB86FC</color>
+    <color name="secondary_variant">#FF7C4DFF</color>
+    <color name="on_secondary">#FF000000</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FF0F0F1A</color>
+    <color name="surface">#FF1A1A2E</color>
+    <color name="surface_variant">#FF252540</color>
+    <color name="surface_elevated">#FF2D2D4A</color>
+    <color name="on_background">#FFE0E0E0</color>
+    <color name="on_surface">#FFE0E0E0</color>
+    <color name="on_surface_variant">#FFA0A0B0</color>
+
+    <!-- Status colors -->
+    <color name="status_on">#FF69F0AE</color>
+    <color name="status_off">#FFFF5252</color>
+    <color name="status_warning">#FFFFD740</color>
+    <color name="status_info">#FF40C4FF</color>
+
+    <!-- Device type colors -->
+    <color name="device_light">#FFFFD54F</color>
+    <color name="device_fan">#FF4FC3F7</color>
+    <color name="device_tv">#FFCE93D8</color>
+    <color name="device_speaker">#FFFF8A65</color>
+
+    <!-- Card backgrounds -->
+    <color name="card_bg">#FF1E1E35</color>
+    <color name="card_stroke">#FF353560</color>
+    <color name="divider">#FF2A2A45</color>
+
+    <!-- Gesture colors -->
+    <color name="gesture_shake">#FFFF6B6B</color>
+    <color name="gesture_tilt">#FF4ECDC4</color>
+    <color name="gesture_rotate">#FFFFE66D</color>
+    <color name="gesture_flip">#FFA78BFA</color>
+
+    <!-- Transparency -->
+    <color name="overlay_dark">#CC000000</color>
+    <color name="ripple_light">#33FFFFFF</color>
+</resources>

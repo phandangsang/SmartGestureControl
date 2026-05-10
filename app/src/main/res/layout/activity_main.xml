@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Smart Gesture Control"
+            app:titleTextColor="@color/primary"
+            app:subtitle="Điều khiển thiết bị thông minh"
+            app:subtitleTextColor="@color/on_surface_variant" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Connection Status -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KẾT NỐI"
+                        style="@style/SectionTitle" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_bluetooth" />
+                            <TextView
+                                android:id="@+id/tvBluetoothStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chưa kết nối"
+                                android:textColor="@color/status_off"
+                                android:textSize="13sp"
+                                android:layout_marginStart="8dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_wifi" />
+                            <TextView
+                                android:id="@+id/tvWifiStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chưa kết nối"
+                                android:textColor="@color/status_off"
+                                android:textSize="13sp"
+                                android:layout_marginStart="8dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Devices Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIẾT BỊ CỦA TÔI"
+                style="@style/SectionTitle"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Row 1: Light + Fan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardLight"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/card_stroke"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <ImageView android:id="@+id/iconLight" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_lightbulb" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đèn" android:textColor="@color/on_surface" android:textSize="14sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+                        <TextView android:id="@+id/tvLightStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TẮT" android:textColor="@color/status_off" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardFan"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/card_stroke"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <ImageView android:id="@+id/iconFan" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_fan" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quạt" android:textColor="@color/on_surface" android:textSize="14sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+                        <TextView android:id="@+id/tvFanStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TẮT" android:textColor="@color/status_off" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Row 2: TV + Speaker -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTV"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/card_stroke"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <ImageView android:id="@+id/iconTV" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_tv" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TV" android:textColor="@color/on_surface" android:textSize="14sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+                        <TextView android:id="@+id/tvTVStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TẮT" android:textColor="@color/status_off" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSpeaker"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/card_stroke"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="14dp"
+                        android:gravity="center">
+                        <ImageView android:id="@+id/iconSpeaker" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_speaker" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loa" android:textColor="@color/on_surface" android:textSize="14sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+                        <TextView android:id="@+id/tvSpeakerStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TẮT" android:textColor="@color/status_off" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Recent Gesture -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CỬ CHỈ GẦN ĐÂY"
+                style="@style/SectionTitle"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/card_stroke"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+                    <TextView android:id="@+id/tvGestureEmoji" android:layout_width="48dp" android:layout_height="48dp" android:text="🤚" android:textSize="32sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:id="@+id/tvLastGesture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chưa phát hiện cử chỉ nào" android:textColor="@color/on_surface" android:textSize="15sp" />
+                        <TextView android:id="@+id/tvLastGestureTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Navigation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHỨC NĂNG"
+                style="@style/SectionTitle"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnGestureControl" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp" android:text="Cử chỉ" app:icon="@drawable/ic_gesture" app:cornerRadius="12dp" style="@style/Widget.Material3.Button.TonalButton" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnDeviceList" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:text="Thiết bị" app:icon="@drawable/ic_tv" app:cornerRadius="12dp" style="@style/Widget.Material3.Button.TonalButton" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_marginBottom="24dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnBluetooth" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp" android:text="Bluetooth" app:icon="@drawable/ic_bluetooth" app:cornerRadius="12dp" style="@style/Widget.Material3.Button.TonalButton" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:text="Cài đặt" app:icon="@drawable/ic_settings" app:cornerRadius="12dp" style="@style/Widget.Material3.Button.TonalButton" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
