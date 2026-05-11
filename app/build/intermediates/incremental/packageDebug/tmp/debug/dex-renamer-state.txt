@@ -1,20 +1,20 @@
-#Mon May 11 19:16:32 ICT 2026
+#Mon May 11 19:47:43 ICT 2026
 base.0=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.5=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.6=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.7=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.3=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.5=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.6=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.7=A\:\\BT3\\SmartGestureControl\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex
-path.3=13/classes.dex
-path.4=14/classes.dex
-path.5=5/classes.dex
-path.6=9/classes.dex
-path.7=12/classes.dex
+path.3=12/classes.dex
+path.4=13/classes.dex
+path.5=14/classes.dex
+path.6=5/classes.dex
+path.7=9/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex

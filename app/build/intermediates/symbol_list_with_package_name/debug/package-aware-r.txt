@@ -3755,10 +3755,7 @@ id tvDeviceAddress
 id tvDeviceName
 id tvFanState
 id tvFanStatus
-id tvGestureEmoji
 id tvGzVal
-id tvLastGesture
-id tvLastGestureTime
 id tvLightState
 id tvLightStatus
 id tvNoPaired

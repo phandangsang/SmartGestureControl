@@ -133,14 +133,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener,
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {}
 
-    // === GestureDetector callbacks ===
     override fun onGestureDetected(gesture: GestureType) {
         runOnUiThread {
-            // Cập nhật UI
-            binding.tvGestureEmoji.text = gesture.emoji
-            binding.tvLastGesture.text = gesture.displayName
-            binding.tvLastGestureTime.text = java.text.SimpleDateFormat("HH:mm:ss",
-                java.util.Locale.getDefault()).format(java.util.Date())
 
             // Rung phản hồi
             vibrator?.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE))

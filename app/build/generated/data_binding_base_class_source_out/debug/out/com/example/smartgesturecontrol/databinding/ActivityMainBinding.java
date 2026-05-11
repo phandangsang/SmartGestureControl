@@ -69,15 +69,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvFanStatus;
 
   @NonNull
-  public final TextView tvGestureEmoji;
-
-  @NonNull
-  public final TextView tvLastGesture;
-
-  @NonNull
-  public final TextView tvLastGestureTime;
-
-  @NonNull
   public final TextView tvLightStatus;
 
   @NonNull
@@ -97,10 +88,8 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull ImageView iconFan, @NonNull ImageView iconLight, @NonNull ImageView iconSpeaker,
       @NonNull ImageView iconTV, @NonNull MaterialToolbar toolbar,
       @NonNull TextView tvBluetoothStatus, @NonNull TextView tvFanStatus,
-      @NonNull TextView tvGestureEmoji, @NonNull TextView tvLastGesture,
-      @NonNull TextView tvLastGestureTime, @NonNull TextView tvLightStatus,
-      @NonNull TextView tvSpeakerStatus, @NonNull TextView tvTVStatus,
-      @NonNull TextView tvWifiStatus) {
+      @NonNull TextView tvLightStatus, @NonNull TextView tvSpeakerStatus,
+      @NonNull TextView tvTVStatus, @NonNull TextView tvWifiStatus) {
     this.rootView = rootView;
     this.btnBluetooth = btnBluetooth;
     this.btnDeviceList = btnDeviceList;
@@ -117,9 +106,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.toolbar = toolbar;
     this.tvBluetoothStatus = tvBluetoothStatus;
     this.tvFanStatus = tvFanStatus;
-    this.tvGestureEmoji = tvGestureEmoji;
-    this.tvLastGesture = tvLastGesture;
-    this.tvLastGestureTime = tvLastGestureTime;
     this.tvLightStatus = tvLightStatus;
     this.tvSpeakerStatus = tvSpeakerStatus;
     this.tvTVStatus = tvTVStatus;
@@ -243,24 +229,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvGestureEmoji;
-      TextView tvGestureEmoji = ViewBindings.findChildViewById(rootView, id);
-      if (tvGestureEmoji == null) {
-        break missingId;
-      }
-
-      id = R.id.tvLastGesture;
-      TextView tvLastGesture = ViewBindings.findChildViewById(rootView, id);
-      if (tvLastGesture == null) {
-        break missingId;
-      }
-
-      id = R.id.tvLastGestureTime;
-      TextView tvLastGestureTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvLastGestureTime == null) {
-        break missingId;
-      }
-
       id = R.id.tvLightStatus;
       TextView tvLightStatus = ViewBindings.findChildViewById(rootView, id);
       if (tvLightStatus == null) {
@@ -287,9 +255,8 @@ public final class ActivityMainBinding implements ViewBinding {
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, btnBluetooth, btnDeviceList,
           btnGestureControl, btnSettings, cardFan, cardLight, cardSpeaker, cardTV, iconFan,
-          iconLight, iconSpeaker, iconTV, toolbar, tvBluetoothStatus, tvFanStatus, tvGestureEmoji,
-          tvLastGesture, tvLastGestureTime, tvLightStatus, tvSpeakerStatus, tvTVStatus,
-          tvWifiStatus);
+          iconLight, iconSpeaker, iconTV, toolbar, tvBluetoothStatus, tvFanStatus, tvLightStatus,
+          tvSpeakerStatus, tvTVStatus, tvWifiStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

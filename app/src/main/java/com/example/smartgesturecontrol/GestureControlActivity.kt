@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.smartgesturecontrol.databinding.ActivityGestureControlBinding
 import com.example.smartgesturecontrol.hardware.PhoneHardwareController
+import com.example.smartgesturecontrol.model.DeviceRepository
 import com.example.smartgesturecontrol.model.GestureType
 import com.example.smartgesturecontrol.sensor.GestureDetector
 import kotlin.math.max

@@ -3754,10 +3754,7 @@ int id tvDeviceAddress 0x7f08020e
 int id tvDeviceName 0x7f08020f
 int id tvFanState 0x7f080241
 int id tvFanStatus 0x7f080210
-int id tvGestureEmoji 0x7f080212
 int id tvGzVal 0x7f080242
-int id tvLastGesture 0x7f080217
-int id tvLastGestureTime 0x7f080218
 int id tvLightState 0x7f080243
 int id tvLightStatus 0x7f080219
 int id tvNoPaired 0x7f08021a
