@@ -4,6 +4,7 @@ package com.example.smartgesturecontrol.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,57 +26,79 @@ public final class ActivityGestureControlBinding implements ViewBinding {
   public final MaterialButton btnToggleGesture;
 
   @NonNull
+  public final ProgressBar pbAx;
+
+  @NonNull
+  public final ProgressBar pbAy;
+
+  @NonNull
+  public final ProgressBar pbGz;
+
+  @NonNull
+  public final ProgressBar pbVolume;
+
+  @NonNull
   public final MaterialToolbar toolbar;
 
   @NonNull
-  public final TextView tvAccelX;
+  public final TextView tvAxVal;
 
   @NonNull
-  public final TextView tvAccelY;
-
-  @NonNull
-  public final TextView tvAccelZ;
+  public final TextView tvAyVal;
 
   @NonNull
   public final TextView tvCommandLog;
 
   @NonNull
-  public final TextView tvGestureAction;
+  public final TextView tvDashboardEmoji;
 
   @NonNull
-  public final TextView tvGestureEmoji;
+  public final TextView tvDashboardRecognized;
 
   @NonNull
-  public final TextView tvGestureName;
+  public final TextView tvDashboardStatus;
 
   @NonNull
-  public final TextView tvGyroX;
+  public final TextView tvFanState;
 
   @NonNull
-  public final TextView tvGyroY;
+  public final TextView tvGzVal;
 
   @NonNull
-  public final TextView tvGyroZ;
+  public final TextView tvLightState;
+
+  @NonNull
+  public final TextView tvSongName;
+
+  @NonNull
+  public final TextView tvVolumeVal;
 
   private ActivityGestureControlBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull MaterialButton btnToggleGesture, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvAccelX, @NonNull TextView tvAccelY, @NonNull TextView tvAccelZ,
-      @NonNull TextView tvCommandLog, @NonNull TextView tvGestureAction,
-      @NonNull TextView tvGestureEmoji, @NonNull TextView tvGestureName, @NonNull TextView tvGyroX,
-      @NonNull TextView tvGyroY, @NonNull TextView tvGyroZ) {
+      @NonNull MaterialButton btnToggleGesture, @NonNull ProgressBar pbAx,
+      @NonNull ProgressBar pbAy, @NonNull ProgressBar pbGz, @NonNull ProgressBar pbVolume,
+      @NonNull MaterialToolbar toolbar, @NonNull TextView tvAxVal, @NonNull TextView tvAyVal,
+      @NonNull TextView tvCommandLog, @NonNull TextView tvDashboardEmoji,
+      @NonNull TextView tvDashboardRecognized, @NonNull TextView tvDashboardStatus,
+      @NonNull TextView tvFanState, @NonNull TextView tvGzVal, @NonNull TextView tvLightState,
+      @NonNull TextView tvSongName, @NonNull TextView tvVolumeVal) {
     this.rootView = rootView;
     this.btnToggleGesture = btnToggleGesture;
+    this.pbAx = pbAx;
+    this.pbAy = pbAy;
+    this.pbGz = pbGz;
+    this.pbVolume = pbVolume;
     this.toolbar = toolbar;
-    this.tvAccelX = tvAccelX;
-    this.tvAccelY = tvAccelY;
-    this.tvAccelZ = tvAccelZ;
+    this.tvAxVal = tvAxVal;
+    this.tvAyVal = tvAyVal;
     this.tvCommandLog = tvCommandLog;
-    this.tvGestureAction = tvGestureAction;
-    this.tvGestureEmoji = tvGestureEmoji;
-    this.tvGestureName = tvGestureName;
-    this.tvGyroX = tvGyroX;
-    this.tvGyroY = tvGyroY;
-    this.tvGyroZ = tvGyroZ;
+    this.tvDashboardEmoji = tvDashboardEmoji;
+    this.tvDashboardRecognized = tvDashboardRecognized;
+    this.tvDashboardStatus = tvDashboardStatus;
+    this.tvFanState = tvFanState;
+    this.tvGzVal = tvGzVal;
+    this.tvLightState = tvLightState;
+    this.tvSongName = tvSongName;
+    this.tvVolumeVal = tvVolumeVal;
   }
 
   @Override
@@ -111,27 +134,45 @@ public final class ActivityGestureControlBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pbAx;
+      ProgressBar pbAx = ViewBindings.findChildViewById(rootView, id);
+      if (pbAx == null) {
+        break missingId;
+      }
+
+      id = R.id.pbAy;
+      ProgressBar pbAy = ViewBindings.findChildViewById(rootView, id);
+      if (pbAy == null) {
+        break missingId;
+      }
+
+      id = R.id.pbGz;
+      ProgressBar pbGz = ViewBindings.findChildViewById(rootView, id);
+      if (pbGz == null) {
+        break missingId;
+      }
+
+      id = R.id.pbVolume;
+      ProgressBar pbVolume = ViewBindings.findChildViewById(rootView, id);
+      if (pbVolume == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      id = R.id.tvAccelX;
-      TextView tvAccelX = ViewBindings.findChildViewById(rootView, id);
-      if (tvAccelX == null) {
+      id = R.id.tvAxVal;
+      TextView tvAxVal = ViewBindings.findChildViewById(rootView, id);
+      if (tvAxVal == null) {
         break missingId;
       }
 
-      id = R.id.tvAccelY;
-      TextView tvAccelY = ViewBindings.findChildViewById(rootView, id);
-      if (tvAccelY == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAccelZ;
-      TextView tvAccelZ = ViewBindings.findChildViewById(rootView, id);
-      if (tvAccelZ == null) {
+      id = R.id.tvAyVal;
+      TextView tvAyVal = ViewBindings.findChildViewById(rootView, id);
+      if (tvAyVal == null) {
         break missingId;
       }
 
@@ -141,45 +182,58 @@ public final class ActivityGestureControlBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvGestureAction;
-      TextView tvGestureAction = ViewBindings.findChildViewById(rootView, id);
-      if (tvGestureAction == null) {
+      id = R.id.tvDashboardEmoji;
+      TextView tvDashboardEmoji = ViewBindings.findChildViewById(rootView, id);
+      if (tvDashboardEmoji == null) {
         break missingId;
       }
 
-      id = R.id.tvGestureEmoji;
-      TextView tvGestureEmoji = ViewBindings.findChildViewById(rootView, id);
-      if (tvGestureEmoji == null) {
+      id = R.id.tvDashboardRecognized;
+      TextView tvDashboardRecognized = ViewBindings.findChildViewById(rootView, id);
+      if (tvDashboardRecognized == null) {
         break missingId;
       }
 
-      id = R.id.tvGestureName;
-      TextView tvGestureName = ViewBindings.findChildViewById(rootView, id);
-      if (tvGestureName == null) {
+      id = R.id.tvDashboardStatus;
+      TextView tvDashboardStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvDashboardStatus == null) {
         break missingId;
       }
 
-      id = R.id.tvGyroX;
-      TextView tvGyroX = ViewBindings.findChildViewById(rootView, id);
-      if (tvGyroX == null) {
+      id = R.id.tvFanState;
+      TextView tvFanState = ViewBindings.findChildViewById(rootView, id);
+      if (tvFanState == null) {
         break missingId;
       }
 
-      id = R.id.tvGyroY;
-      TextView tvGyroY = ViewBindings.findChildViewById(rootView, id);
-      if (tvGyroY == null) {
+      id = R.id.tvGzVal;
+      TextView tvGzVal = ViewBindings.findChildViewById(rootView, id);
+      if (tvGzVal == null) {
         break missingId;
       }
 
-      id = R.id.tvGyroZ;
-      TextView tvGyroZ = ViewBindings.findChildViewById(rootView, id);
-      if (tvGyroZ == null) {
+      id = R.id.tvLightState;
+      TextView tvLightState = ViewBindings.findChildViewById(rootView, id);
+      if (tvLightState == null) {
         break missingId;
       }
 
-      return new ActivityGestureControlBinding((CoordinatorLayout) rootView, btnToggleGesture,
-          toolbar, tvAccelX, tvAccelY, tvAccelZ, tvCommandLog, tvGestureAction, tvGestureEmoji,
-          tvGestureName, tvGyroX, tvGyroY, tvGyroZ);
+      id = R.id.tvSongName;
+      TextView tvSongName = ViewBindings.findChildViewById(rootView, id);
+      if (tvSongName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvVolumeVal;
+      TextView tvVolumeVal = ViewBindings.findChildViewById(rootView, id);
+      if (tvVolumeVal == null) {
+        break missingId;
+      }
+
+      return new ActivityGestureControlBinding((CoordinatorLayout) rootView, btnToggleGesture, pbAx,
+          pbAy, pbGz, pbVolume, toolbar, tvAxVal, tvAyVal, tvCommandLog, tvDashboardEmoji,
+          tvDashboardRecognized, tvDashboardStatus, tvFanState, tvGzVal, tvLightState, tvSongName,
+          tvVolumeVal);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
