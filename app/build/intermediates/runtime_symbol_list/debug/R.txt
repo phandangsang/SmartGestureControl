@@ -3752,7 +3752,6 @@ int id tvDashboardRecognized 0x7f08023f
 int id tvDashboardStatus 0x7f080240
 int id tvDeviceAddress 0x7f08020e
 int id tvDeviceName 0x7f08020f
-int id tvFanState 0x7f080241
 int id tvFanStatus 0x7f080210
 int id tvGzVal 0x7f080242
 int id tvLightState 0x7f080243

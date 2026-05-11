@@ -37,9 +37,8 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
     private var isDetecting = false
     private val commandLogBuilder = StringBuilder()
     
-    // Giả lập trạng thái bài hát & quạt trên UI
+    // Giả lập trạng thái bài hát trên UI
     private var currentSongIndex = 1
-    private var isFanOn = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -82,7 +81,6 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
         updateLightUI(hardwareController.getFlashlightState())
         updateVolumeUI(hardwareController.getVolumePercentage())
         updateMediaUI()
-        updateFanUI()
     }
 
     private fun startDetecting() {
@@ -179,12 +177,8 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
                 updateMediaUI()
                 logCommand("Media Player", "NEXT")
             }
-            GestureType.FLIP -> {
-                // FLIP mapping sang Play/Pause nhạc thay vì Quạt IoT
-                hardwareController.togglePlayPause()
-                isFanOn = !isFanOn // Cứ để icon Quạt nhảy cho vui mắt (mô phỏng)
-                updateFanUI()
-                logCommand("Media Player", "PLAY/PAUSE (Simulated Fan Toggle)")
+            else -> {
+                // Không làm gì với các cử chỉ khác (ví dụ: FLIP)
             }
         }
     }
@@ -214,18 +208,6 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
     
     private fun updateMediaUI() {
         binding.tvSongName.text = "Bài $currentSongIndex ►"
-    }
-    
-    private fun updateFanUI() {
-        if (isFanOn) {
-            binding.tvFanState.text = "[ BẬT ● ]"
-            binding.tvFanState.setBackgroundResource(R.drawable.bg_label_on)
-            binding.tvFanState.setTextColor(ContextCompat.getColor(this, R.color.on_primary))
-        } else {
-            binding.tvFanState.text = "[ TẮT ● ]"
-            binding.tvFanState.setBackgroundResource(R.drawable.bg_label_off)
-            binding.tvFanState.setTextColor(ContextCompat.getColor(this, R.color.on_surface_variant))
-        }
     }
 
     override fun onSensorDataUpdated(accelData: FloatArray, gyroData: FloatArray) {

@@ -59,9 +59,6 @@ public final class ActivityGestureControlBinding implements ViewBinding {
   public final TextView tvDashboardStatus;
 
   @NonNull
-  public final TextView tvFanState;
-
-  @NonNull
   public final TextView tvGzVal;
 
   @NonNull
@@ -79,8 +76,8 @@ public final class ActivityGestureControlBinding implements ViewBinding {
       @NonNull MaterialToolbar toolbar, @NonNull TextView tvAxVal, @NonNull TextView tvAyVal,
       @NonNull TextView tvCommandLog, @NonNull TextView tvDashboardEmoji,
       @NonNull TextView tvDashboardRecognized, @NonNull TextView tvDashboardStatus,
-      @NonNull TextView tvFanState, @NonNull TextView tvGzVal, @NonNull TextView tvLightState,
-      @NonNull TextView tvSongName, @NonNull TextView tvVolumeVal) {
+      @NonNull TextView tvGzVal, @NonNull TextView tvLightState, @NonNull TextView tvSongName,
+      @NonNull TextView tvVolumeVal) {
     this.rootView = rootView;
     this.btnToggleGesture = btnToggleGesture;
     this.pbAx = pbAx;
@@ -94,7 +91,6 @@ public final class ActivityGestureControlBinding implements ViewBinding {
     this.tvDashboardEmoji = tvDashboardEmoji;
     this.tvDashboardRecognized = tvDashboardRecognized;
     this.tvDashboardStatus = tvDashboardStatus;
-    this.tvFanState = tvFanState;
     this.tvGzVal = tvGzVal;
     this.tvLightState = tvLightState;
     this.tvSongName = tvSongName;
@@ -200,12 +196,6 @@ public final class ActivityGestureControlBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvFanState;
-      TextView tvFanState = ViewBindings.findChildViewById(rootView, id);
-      if (tvFanState == null) {
-        break missingId;
-      }
-
       id = R.id.tvGzVal;
       TextView tvGzVal = ViewBindings.findChildViewById(rootView, id);
       if (tvGzVal == null) {
@@ -232,8 +222,7 @@ public final class ActivityGestureControlBinding implements ViewBinding {
 
       return new ActivityGestureControlBinding((CoordinatorLayout) rootView, btnToggleGesture, pbAx,
           pbAy, pbGz, pbVolume, toolbar, tvAxVal, tvAyVal, tvCommandLog, tvDashboardEmoji,
-          tvDashboardRecognized, tvDashboardStatus, tvFanState, tvGzVal, tvLightState, tvSongName,
-          tvVolumeVal);
+          tvDashboardRecognized, tvDashboardStatus, tvGzVal, tvLightState, tvSongName, tvVolumeVal);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

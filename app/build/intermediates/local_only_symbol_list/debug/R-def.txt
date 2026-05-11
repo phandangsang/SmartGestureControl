@@ -110,7 +110,6 @@ id tvDashboardRecognized
 id tvDashboardStatus
 id tvDeviceAddress
 id tvDeviceName
-id tvFanState
 id tvFanStatus
 id tvGzVal
 id tvLightState
