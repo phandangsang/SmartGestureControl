@@ -183,6 +183,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener,
         }
         updateDeviceCards()
         checkWifiConnection()
+        checkBluetoothConnection()
     }
 
     private fun checkWifiConnection() {
@@ -197,6 +198,17 @@ class MainActivity : AppCompatActivity(), SensorEventListener,
                 binding.tvWifiStatus.text = "Chưa kết nối"
                 binding.tvWifiStatus.setTextColor(getColor(R.color.status_off))
             }
+        }
+    }
+
+    private fun checkBluetoothConnection() {
+        val btManager = DeviceRepository.bluetoothManager
+        if (btManager != null && btManager.isConnected) {
+            binding.tvBluetoothStatus.text = "Đã kết nối"
+            binding.tvBluetoothStatus.setTextColor(getColor(R.color.status_on))
+        } else {
+            binding.tvBluetoothStatus.text = "Chưa kết nối"
+            binding.tvBluetoothStatus.setTextColor(getColor(R.color.status_off))
         }
     }
 
