@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\Sang\.gradle\caches\transforms-3\e0701fc0067d4d42623792928853f099\transformed\viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Sang\.gradle\caches\transforms-3\8f233cd207c72d15e2cbf7d39024ac77\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sang\.gradle\caches\transforms-3\ad0352c600be7f232d7167d1af9df1b7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -130,8 +130,8 @@ ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:23:5-88
 	android:name
 		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:23:19-60
 application
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-49:19
-INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-49:19
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-50:19
+INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-50:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Sang\.gradle\caches\transforms-3\8f233cd207c72d15e2cbf7d39024ac77\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Sang\.gradle\caches\transforms-3\8f233cd207c72d15e2cbf7d39024ac77\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sang\.gradle\caches\transforms-3\ad0352c600be7f232d7167d1af9df1b7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -161,55 +161,57 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Sang\.gradle\cache
 	android:roundIcon
 		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:29:9-54
 	tools:targetApi
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:32:9-29
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:33:9-29
 	android:icon
 		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:27:9-43
 	android:allowBackup
 		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:26:9-35
 	android:theme
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:31:9-57
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:32:9-57
+	android:usesCleartextTraffic
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:31:9-44
 activity#com.example.smartgesturecontrol.MainActivity
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:34:9-42:20
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:35:9-43:20
 	android:screenOrientation
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:37:13-49
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:38:13-49
 	android:exported
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:36:13-36
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:36:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:38:13-41:29
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:13-42:29
 action#android.intent.action.MAIN
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.example.smartgesturecontrol.GestureControlActivity
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:9-97
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:9-97
 	android:screenOrientation
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:58-94
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:58-94
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:19-57
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:19-57
 activity#com.example.smartgesturecontrol.DeviceListActivity
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:9-93
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:9-93
 	android:screenOrientation
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:54-90
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:54-90
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:19-53
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:19-53
 activity#com.example.smartgesturecontrol.BluetoothActivity
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:9-92
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:9-92
 	android:screenOrientation
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:53-89
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:53-89
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:19-52
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:19-52
 activity#com.example.smartgesturecontrol.SettingsActivity
-ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:9-91
+ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:9-91
 	android:screenOrientation
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:52-88
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:52-88
 	android:name
-		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:19-51
+		ADDED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:19-51
 uses-sdk
 INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml

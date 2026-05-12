@@ -23,7 +23,7 @@ object DeviceRepository {
     // WiFiDeviceManager gửi HTTP request đến IP thiết bị
     var wifiManager: WiFiDeviceManager? = null
     // IP mặc định của thiết bị WiFi IoT (VD: ESP32 web server)
-    var wifiDeviceIp: String = "192.168.1.100"
+    var wifiDeviceIp: String = "172.20.10.5"
 
     interface OnDeviceChangedListener {
         fun onDeviceStateChanged(device: SmartDevice)
@@ -140,29 +140,42 @@ object DeviceRepository {
      *   → cập nhật UI + gửi lệnh qua BT/WiFi
      */
     fun executeGestureAction(gesture: GestureType): DeviceCommand? {
-        val device = devices.find { it.assignedGesture == gesture } ?: return null
         return when (gesture) {
             GestureType.SHAKE, GestureType.FLIP -> {
+                val deviceId = if (gesture == GestureType.SHAKE) "light_01" else "fan_01"
+                val device = getDeviceById(deviceId) ?: return null
                 toggleDevice(device.id)
                 DeviceCommand(device.id, "TOGGLE")
             }
             GestureType.TILT_UP -> {
+                val device = getDeviceById("speaker_01") ?: return null
                 val newVal = (device.value + 10).coerceAtMost(100)
-                setDeviceValue(device.id, newVal)
-                DeviceCommand(device.id, "VOLUME_UP", newVal)
+                device.value = newVal
+                DeviceCommand(device.id, "VOLUME_UP", newVal).also {
+                    commandLog.add(it)
+                    sendCommandToDevice(device, it)
+                    listeners.forEach { l -> l.onDeviceStateChanged(device); l.onCommandExecuted(it) }
+                }
             }
             GestureType.TILT_DOWN -> {
+                val device = getDeviceById("speaker_01") ?: return null
                 val newVal = (device.value - 10).coerceAtLeast(0)
-                setDeviceValue(device.id, newVal)
-                DeviceCommand(device.id, "VOLUME_DOWN", newVal)
+                device.value = newVal
+                DeviceCommand(device.id, "VOLUME_DOWN", newVal).also {
+                    commandLog.add(it)
+                    sendCommandToDevice(device, it)
+                    listeners.forEach { l -> l.onDeviceStateChanged(device); l.onCommandExecuted(it) }
+                }
             }
             GestureType.ROTATE_LEFT -> {
+                val device = getDeviceById("tv_01") ?: return null
                 DeviceCommand(device.id, "PREVIOUS").also {
                     commandLog.add(it)
                     sendCommandToDevice(device, it)
                 }
             }
             GestureType.ROTATE_RIGHT -> {
+                val device = getDeviceById("tv_01") ?: return null
                 DeviceCommand(device.id, "NEXT").also {
                     commandLog.add(it)
                     sendCommandToDevice(device, it)

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\drawable\\ic_speaker.xml"
     },
     {
+        "merged": "com.example.smartgesturecontrol.app-merged_res-4:/layout_activity_settings.xml.flat",
+        "source": "com.example.smartgesturecontrol.app-main-6:/layout/activity_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\layout_activity_device_list.xml.flat",
         "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\layout\\activity_device_list.xml"
     },
@@ -56,12 +60,12 @@
         "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\drawable\\ic_fan.xml"
     },
     {
-        "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\layout_item_device.xml.flat",
-        "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\layout\\item_device.xml"
-    },
-    {
         "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\drawable_ic_lightbulb.xml.flat",
         "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\drawable\\ic_lightbulb.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\layout_item_device.xml.flat",
+        "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\layout\\item_device.xml"
     },
     {
         "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -78,10 +82,6 @@
     {
         "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\layout_activity_bluetooth.xml.flat",
         "source": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-main-6:\\layout\\activity_bluetooth.xml"
-    },
-    {
-        "merged": "com.example.smartgesturecontrol.app-merged_res-4:/layout_activity_gesture_control.xml.flat",
-        "source": "com.example.smartgesturecontrol.app-main-6:/layout/activity_gesture_control.xml"
     },
     {
         "merged": "C:\\Users\\Sang\\.gradle\\daemon\\8.5\\com.example.smartgesturecontrol.app-merged_res-4:\\layout_activity_settings.xml.flat",

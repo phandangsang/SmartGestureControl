@@ -3323,6 +3323,7 @@ int id btnConnect 0x7f080064
 int id btnDeviceList 0x7f080065
 int id btnGestureControl 0x7f080066
 int id btnReset 0x7f080067
+int id btnSaveIp 0x7f080246
 int id btnScan 0x7f080068
 int id btnSettings 0x7f080069
 int id btnToggleGesture 0x7f08006a
@@ -3418,6 +3419,7 @@ int id end 0x7f0800c3
 int id endToStart 0x7f0800c4
 int id enterAlways 0x7f0800c5
 int id enterAlwaysCollapsed 0x7f0800c6
+int id etWifiIp 0x7f080247
 int id exitUntilCollapsed 0x7f0800c7
 int id expand_activities_button 0x7f0800c8
 int id expanded_menu 0x7f0800c9

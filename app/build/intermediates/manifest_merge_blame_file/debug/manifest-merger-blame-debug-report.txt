@@ -81,7 +81,7 @@
 45-->[androidx.core:core:1.12.0] C:\Users\Sang\.gradle\caches\transforms-3\0d4ffc60e85a7c7f9fbeb27599893adc\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 46
 47    <application
-47-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-49:19
+47-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:25:5-50:19
 48        android:allowBackup="true"
 48-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:26:9-35
 49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -97,130 +97,132 @@
 55        android:supportsRtl="true"
 55-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:30:9-35
 56        android:testOnly="true"
-57        android:theme="@style/Theme.SmartGestureControl" >
-57-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:31:9-57
-58        <activity
-58-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:34:9-42:20
-59            android:name="com.example.smartgesturecontrol.MainActivity"
-59-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:35:13-41
-60            android:exported="true"
-60-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:36:13-36
-61            android:screenOrientation="portrait" >
-61-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:37:13-49
-62            <intent-filter>
-62-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:38:13-41:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:17-69
-63-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:17-77
-65-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:27-74
-66            </intent-filter>
-67        </activity>
-68        <activity
-68-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:9-97
-69            android:name="com.example.smartgesturecontrol.GestureControlActivity"
-69-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:19-57
-70            android:screenOrientation="portrait" />
-70-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:44:58-94
-71        <activity
-71-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:9-93
-72            android:name="com.example.smartgesturecontrol.DeviceListActivity"
-72-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:19-53
-73            android:screenOrientation="portrait" />
-73-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:54-90
-74        <activity
-74-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:9-92
-75            android:name="com.example.smartgesturecontrol.BluetoothActivity"
-75-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:19-52
-76            android:screenOrientation="portrait" />
-76-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:53-89
-77        <activity
-77-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:9-91
-78            android:name="com.example.smartgesturecontrol.SettingsActivity"
-78-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:19-51
-79            android:screenOrientation="portrait" />
-79-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:52-88
-80
-81        <provider
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-82            android:name="androidx.startup.InitializationProvider"
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-83            android:authorities="com.example.smartgesturecontrol.androidx-startup"
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-84            android:exported="false" >
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-85            <meta-data
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-87                android:value="androidx.startup" />
-87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-88            <meta-data
-88-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-89-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-90                android:value="androidx.startup" />
-90-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-91            <meta-data
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-92                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-93                android:value="androidx.startup" />
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-94        </provider>
-95
-96        <uses-library
-96-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-97            android:name="androidx.window.extensions"
-97-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-98            android:required="false" />
-98-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-99        <uses-library
-99-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-100            android:name="androidx.window.sidecar"
-100-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-101            android:required="false" />
-101-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-102
-103        <receiver
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-104            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-105            android:directBootAware="false"
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-106            android:enabled="true"
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-107            android:exported="true"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-108            android:permission="android.permission.DUMP" >
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-109            <intent-filter>
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-110                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-111            </intent-filter>
-112            <intent-filter>
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-113                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-114            </intent-filter>
-115            <intent-filter>
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-116                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-117            </intent-filter>
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-119                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-120            </intent-filter>
-121        </receiver>
-122    </application>
-123
-124</manifest>
+57        android:theme="@style/Theme.SmartGestureControl"
+57-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:32:9-57
+58        android:usesCleartextTraffic="true" >
+58-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:31:9-44
+59        <activity
+59-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:35:9-43:20
+60            android:name="com.example.smartgesturecontrol.MainActivity"
+60-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:36:13-41
+61            android:exported="true"
+61-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:37:13-36
+62            android:screenOrientation="portrait" >
+62-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:38:13-49
+63            <intent-filter>
+63-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:39:13-42:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:17-69
+64-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:40:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:41:17-77
+66-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:41:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:9-97
+70            android:name="com.example.smartgesturecontrol.GestureControlActivity"
+70-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:19-57
+71            android:screenOrientation="portrait" />
+71-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:45:58-94
+72        <activity
+72-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:9-93
+73            android:name="com.example.smartgesturecontrol.DeviceListActivity"
+73-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:19-53
+74            android:screenOrientation="portrait" />
+74-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:46:54-90
+75        <activity
+75-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:9-92
+76            android:name="com.example.smartgesturecontrol.BluetoothActivity"
+76-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:19-52
+77            android:screenOrientation="portrait" />
+77-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:47:53-89
+78        <activity
+78-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:9-91
+79            android:name="com.example.smartgesturecontrol.SettingsActivity"
+79-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:19-51
+80            android:screenOrientation="portrait" />
+80-->A:\BT3\SmartGestureControl\app\src\main\AndroidManifest.xml:48:52-88
+81
+82        <provider
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+83            android:name="androidx.startup.InitializationProvider"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+84            android:authorities="com.example.smartgesturecontrol.androidx-startup"
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+85            android:exported="false" >
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+86            <meta-data
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+88                android:value="androidx.startup" />
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sang\.gradle\caches\transforms-3\0ddb9c379c67fcbab722e7078f3a6911\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+89            <meta-data
+89-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+90-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+91                android:value="androidx.startup" />
+91-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Sang\.gradle\caches\transforms-3\037feae25c324ecdb793b0bcf7c2dfa3\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+94                android:value="androidx.startup" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+95        </provider>
+96
+97        <uses-library
+97-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+98            android:name="androidx.window.extensions"
+98-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+99            android:required="false" />
+99-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+100        <uses-library
+100-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+101            android:name="androidx.window.sidecar"
+101-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+102            android:required="false" />
+102-->[androidx.window:window:1.0.0] C:\Users\Sang\.gradle\caches\transforms-3\620aa41e339451f79b654dd8ef9b5dcd\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+103
+104        <receiver
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+105            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+106            android:directBootAware="false"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+107            android:enabled="true"
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+108            android:exported="true"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+109            android:permission="android.permission.DUMP" >
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+111                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+112            </intent-filter>
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+114                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+117                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+120                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sang\.gradle\caches\transforms-3\96880c6b062bc21963958e8d695bed5e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+121            </intent-filter>
+122        </receiver>
+123    </application>
+124
+125</manifest>

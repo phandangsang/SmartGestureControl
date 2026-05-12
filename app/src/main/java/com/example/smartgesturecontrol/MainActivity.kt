@@ -41,6 +41,17 @@ class MainActivity : AppCompatActivity(), SensorEventListener,
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Load WiFi IP
+        val prefs = getSharedPreferences("gesture_settings", Context.MODE_PRIVATE)
+        val savedIp = prefs.getString("wifi_ip", null)
+        if (savedIp != null) {
+            DeviceRepository.wifiDeviceIp = savedIp
+        }
+        
+        if (DeviceRepository.wifiManager == null) {
+            DeviceRepository.wifiManager = com.example.smartgesturecontrol.connection.WiFiDeviceManager()
+        }
+
         // Khởi tạo sensor
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
@@ -171,6 +182,22 @@ class MainActivity : AppCompatActivity(), SensorEventListener,
             sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_NORMAL)
         }
         updateDeviceCards()
+        checkWifiConnection()
+    }
+
+    private fun checkWifiConnection() {
+        binding.tvWifiStatus.text = "Đang kiểm tra..."
+        binding.tvWifiStatus.setTextColor(getColor(R.color.on_surface_variant))
+        
+        DeviceRepository.wifiManager?.pingDevice(DeviceRepository.wifiDeviceIp) { isReachable ->
+            if (isReachable) {
+                binding.tvWifiStatus.text = "Đã kết nối"
+                binding.tvWifiStatus.setTextColor(getColor(R.color.status_on))
+            } else {
+                binding.tvWifiStatus.text = "Chưa kết nối"
+                binding.tvWifiStatus.setTextColor(getColor(R.color.status_off))
+            }
+        }
     }
 
     override fun onPause() {

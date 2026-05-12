@@ -70,6 +70,7 @@ id btnConnect
 id btnDeviceList
 id btnGestureControl
 id btnReset
+id btnSaveIp
 id btnScan
 id btnSettings
 id btnToggleGesture
@@ -84,6 +85,7 @@ id deviceStatus
 id deviceSwitch
 id deviceType
 id deviceValue
+id etWifiIp
 id fabAddDevice
 id iconFan
 id iconLight

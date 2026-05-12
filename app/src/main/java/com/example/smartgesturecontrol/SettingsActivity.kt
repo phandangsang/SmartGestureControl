@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.smartgesturecontrol.databinding.ActivitySettingsBinding
+import com.example.smartgesturecontrol.model.DeviceRepository
 
 /**
  * SettingsActivity - Cài đặt ngưỡng nhạy cử chỉ và tùy chọn ứng dụng
@@ -37,6 +38,9 @@ class SettingsActivity : AppCompatActivity() {
 
         binding.tvTiltValue.text = String.format("%.1f", tilt)
         binding.tvRotateValue.text = String.format("%.1f", rotate)
+        
+        val ip = prefs.getString("wifi_ip", DeviceRepository.wifiDeviceIp) ?: DeviceRepository.wifiDeviceIp
+        binding.etWifiIp.setText(ip)
     }
 
     private fun setupSliders() {
@@ -70,6 +74,18 @@ class SettingsActivity : AppCompatActivity() {
                 .apply()
 
             Toast.makeText(this, "Đã khôi phục cài đặt mặc định", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btnSaveIp.setOnClickListener {
+            val newIp = binding.etWifiIp.text.toString().trim()
+            if (newIp.isNotEmpty()) {
+                getSharedPreferences("gesture_settings", Context.MODE_PRIVATE)
+                    .edit()
+                    .putString("wifi_ip", newIp)
+                    .apply()
+                DeviceRepository.wifiDeviceIp = newIp
+                Toast.makeText(this, "Đã lưu IP: $newIp", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

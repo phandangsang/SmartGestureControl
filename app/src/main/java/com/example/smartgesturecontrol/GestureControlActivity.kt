@@ -38,7 +38,7 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
     private val commandLogBuilder = StringBuilder()
     
     // Giả lập trạng thái bài hát trên UI
-    private var currentSongIndex = 1
+    private var currentSongIndex = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -167,13 +167,13 @@ class GestureControlActivity : AppCompatActivity(), SensorEventListener,
             }
             GestureType.ROTATE_LEFT -> {
                 hardwareController.changeSong(next = false)
-                if (currentSongIndex > 1) currentSongIndex--
+                currentSongIndex = if (currentSongIndex > 1) currentSongIndex - 1 else 99
                 updateMediaUI()
                 logCommand("Media Player", "PREVIOUS")
             }
             GestureType.ROTATE_RIGHT -> {
                 hardwareController.changeSong(next = true)
-                currentSongIndex++
+                currentSongIndex = if (currentSongIndex < 99) currentSongIndex + 1 else 1
                 updateMediaUI()
                 logCommand("Media Player", "NEXT")
             }

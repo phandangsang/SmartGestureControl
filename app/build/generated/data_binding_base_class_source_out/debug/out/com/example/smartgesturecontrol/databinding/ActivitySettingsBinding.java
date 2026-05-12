@@ -15,6 +15,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.slider.Slider;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,6 +26,12 @@ public final class ActivitySettingsBinding implements ViewBinding {
 
   @NonNull
   public final MaterialButton btnReset;
+
+  @NonNull
+  public final MaterialButton btnSaveIp;
+
+  @NonNull
+  public final TextInputEditText etWifiIp;
 
   @NonNull
   public final Slider sliderRotate;
@@ -45,11 +52,14 @@ public final class ActivitySettingsBinding implements ViewBinding {
   public final TextView tvTiltValue;
 
   private ActivitySettingsBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull MaterialButton btnReset, @NonNull Slider sliderRotate, @NonNull Slider sliderTilt,
+      @NonNull MaterialButton btnReset, @NonNull MaterialButton btnSaveIp,
+      @NonNull TextInputEditText etWifiIp, @NonNull Slider sliderRotate, @NonNull Slider sliderTilt,
       @NonNull MaterialSwitch switchVibration, @NonNull MaterialToolbar toolbar,
       @NonNull TextView tvRotateValue, @NonNull TextView tvTiltValue) {
     this.rootView = rootView;
     this.btnReset = btnReset;
+    this.btnSaveIp = btnSaveIp;
+    this.etWifiIp = etWifiIp;
     this.sliderRotate = sliderRotate;
     this.sliderTilt = sliderTilt;
     this.switchVibration = switchVibration;
@@ -91,6 +101,18 @@ public final class ActivitySettingsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnSaveIp;
+      MaterialButton btnSaveIp = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveIp == null) {
+        break missingId;
+      }
+
+      id = R.id.etWifiIp;
+      TextInputEditText etWifiIp = ViewBindings.findChildViewById(rootView, id);
+      if (etWifiIp == null) {
+        break missingId;
+      }
+
       id = R.id.sliderRotate;
       Slider sliderRotate = ViewBindings.findChildViewById(rootView, id);
       if (sliderRotate == null) {
@@ -127,8 +149,8 @@ public final class ActivitySettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySettingsBinding((CoordinatorLayout) rootView, btnReset, sliderRotate,
-          sliderTilt, switchVibration, toolbar, tvRotateValue, tvTiltValue);
+      return new ActivitySettingsBinding((CoordinatorLayout) rootView, btnReset, btnSaveIp,
+          etWifiIp, sliderRotate, sliderTilt, switchVibration, toolbar, tvRotateValue, tvTiltValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
