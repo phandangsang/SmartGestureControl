@@ -105,6 +105,7 @@ class GestureDetector(
         listener?.onSensorDataUpdated(currentAccelData, currentGyroData)
 
         if (rotateEnabled) {
+            // Sử dụng trục Z (filtered[2]) để nhận diện thao tác xoay ngang máy 90 độ (như bẻ vô lăng)
             if (filtered[2] > rotateThreshold) {
                 emitGesture(GestureType.ROTATE_LEFT)
             } else if (filtered[2] < -rotateThreshold) {
